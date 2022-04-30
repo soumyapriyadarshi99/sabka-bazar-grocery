@@ -1,0 +1,67 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixin";
+@import "./components/header";
+@import "./components/footer";
+
+@media screen and(min-width:$mobile-screen) {
+  body {
+    // margin: 0 5%;
+    font-family: "Dosis", sans-serif;
+    font-size: $mobile-body-font-size;
+    line-height: $mobile-body-line-height;
+    letter-spacing: 0.5px;
+  }
+  section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .heading {
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.55px;
+  }
+
+  button {
+    @include btn;
+    border: none;
+    font-family: "Dosis", sans-serif;
+  }
+  ul li {
+    @include ulli;
+  }
+}
+@media screen and (min-width: $tablet-screen) {
+  body {
+    // margin: 0px 7.5%;
+    font-size: $tablet-body-font-size;
+    line-height: $tablet-body-line-height;
+    letter-spacing: 0.6px;
+  }
+  section {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .heading {
+    font-size: 17px;
+    line-height: 18px;
+    letter-spacing: 0.75px;
+  }
+}
+@media screen and (min-width: $desktop-screen) {
+  body {
+    // margin: 0px 10%;
+    font-size: $laptop-body-font-size;
+    line-height: $laptop-body-line-height;
+    letter-spacing: 0.8px;
+  }
+  section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .heading {
+    font-size: 17px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+  }
+}

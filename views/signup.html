@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="passbox" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sabka Bazar Shopping website " />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../sass/theme.css" />
+    <link rel="stylesheet" href="../sass/layout/login.css" />
+    <title>Signup | Sabka Bazaar</title>
+  </head>
+
+  <body>
+    <!-- headerr -->
+    <!-- signup page -->
+    <section class="header"></section>
+    <section class="signupcontainer">
+      <div class="complete_page">
+        <div class="left_page">
+          <h1 class="page_title">Signup</h1>
+          <h class="page_description">
+            We do not share your personal details with anyone
+          </h>
+        </div>
+        <div class="right_page">
+          <!-- form starts here -->
+          <form class="form" action="login.html">
+            <div>
+              <h4 class="required_heading">* field are mandotary to fill</h4>
+              <div class="txt_field">
+                <input
+                  type="text"
+                  autocomplete
+                  id="first_name"
+                  autofocus
+                  tabindex="1"
+                  required
+                />
+                <span></span>
+                <label>First Name*</label>
+              </div>
+            </div>
+            <div>
+              <div class="txt_field">
+                <input
+                  type="text"
+                  autocomplete
+                  id="last_name"
+                  tabindex="2"
+                  required
+                />
+                <span></span>
+                <label>Last Name*</label>
+              </div>
+            </div>
+            <div>
+              <div class="txt_field">
+                <input
+                  type="email"
+                  autocomplete
+                  id="user_mail"
+                  tabindex="3"
+                  required
+                />
+                <span></span>
+                <label class="email_box">Email*</label>
+              </div>
+              <span class="email_text"></span>
+            </div>
+            <div>
+              <div class="txt_field">
+                <input
+                  type="password"
+                  id="user_password"
+                  autocomplete
+                  tabindex="4"
+                  required
+                />
+                <span></span>
+                <label class="password_box">Password*</label>
+              </div>
+              <span class="password_text"></span>
+            </div>
+            <div>
+              <div class="txt_field">
+                <input
+                  type="password"
+                  id="confirm_password"
+                  autocomplete
+                  tabindex="5"
+                  required
+                />
+                <span></span>
+                <label class="confirm_password_box">Confirm Password*</label>
+              </div>
+              <span class="confirm_password_text"></span>
+            </div>
+            <div class="show_pass">
+              <input
+                type="checkbox"
+                class="showpass_checkox"
+                id="showpassword"
+                tabindex="6"
+              />
+              <span>Show Password</span>
+            </div>
+            <input
+              type="submit"
+              id="signup"
+              class="signup"
+              value="Signup"
+              tabindex="7"
+            />
+            <div class="page_redirection_link">
+              existing member?
+              <a href="./login.html" tabindex="8">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="footer"></section>
+    <script src="../js/user/signup.js"></script>
+    <script type="module" src="../js/utility/common.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c090413f2d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

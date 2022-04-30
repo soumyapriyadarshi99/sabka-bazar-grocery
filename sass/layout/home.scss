@@ -1,0 +1,65 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+@import "../components/header";
+
+@media screen and (min-width: $mobile-screen) {
+  .categorybox {
+    margin: 0px 5%;
+  }
+  .categorydisplay {
+    @include flexitems($justifycontent: space-between);
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    // margin: 0px 5%;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 6px -6px $lightgrey;
+  }
+  .categorydisplay:nth-child(even) {
+    @include flexitems($flex-direction: row-reverse);
+  }
+
+  .categoryimg {
+    width: 35%;
+  }
+  .categoryimg img {
+    width: 80%;
+  }
+  .descimg {
+    width: 55%;
+  }
+  .descheading,
+  .desc,
+  .button {
+    margin-bottom: 10px;
+  }
+
+  .descheading {
+    @include prodname;
+  }
+  .header {
+    padding-top: 0;
+  }
+  nav {
+    padding-left: 2.5%;
+    padding-right: 2.55%;
+  }
+}
+@media screen and (min-width: $tablet-screen) {
+  .categorybox {
+    margin: 0px 7.5%;
+  }
+  nav {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+}
+@media screen and (min-width: $desktop-screen) {
+  nav {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .categorybox {
+    margin: 0px 10%;
+  }
+}

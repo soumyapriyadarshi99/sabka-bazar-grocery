@@ -1,0 +1,60 @@
+@import "./variables";
+
+@mixin mobilescreen($min-width: 375px) {
+  min-width: $min-width;
+}
+
+@mixin flexitems(
+  $display: flex,
+  $justifycontent: center,
+  $flex-direction: row,
+  $align-items: center
+) {
+  display: $display;
+  justify-content: $justifycontent;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+}
+
+@mixin ulli($text-decoration: none, $list-style: none, $font-size: 12px) {
+  text-decoration: $text-decoration;
+  list-style: $list-style;
+  font-size: $font-size;
+}
+
+@mixin btn(
+  $bg-color: $pinkred,
+  $padding: 5px 10px,
+  $text-align: center,
+  $text-decoration: none,
+  $color: $white,
+  $font-size: $tablet-body-line-height
+) {
+  background-color: $bg-color;
+  padding: $padding;
+  text-align: $text-align;
+  text-decoration: $text-decoration;
+  cursor: pointer;
+  color: $color;
+  font-size: $font-size;
+}
+
+@mixin prodname($font-weight: 1000) {
+  font-weight: $font-weight;
+}
+
+@mixin input(
+  $color: $lightgrey,
+  $width: 100%,
+  $padding: 5px 10px,
+  $margin-bottom: 7px
+) {
+  color: $color;
+  width: $width;
+  padding: $padding;
+  margin-bottom: $margin-bottom;
+}
+
+@mixin inputlabel($font-size: 14px) {
+  font-size: $font-size;
+}

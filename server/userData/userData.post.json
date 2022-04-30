@@ -1,0 +1,36 @@
+[
+    {
+        "email":"subramanyam@gmail.com",
+        "password":"123456",
+        "first-name":"subramanyam",
+        "last-name":"Reddy"
+
+      },
+    {
+        "email":"sneha@gmail.com",
+        "password":"123456",
+        "first-name":"Sneha",
+        "last-name":"R"
+
+    },
+    {
+        "email":"peeyush@gmail.com",
+        "password":"123456",
+        "first-name":"Peeyush",
+        "last-name":"Singh"
+
+    },
+    {
+        "email":"hemant@gmail.com",
+        "password":"123456",
+        "first-name":"Hemant",
+        "last-name":"Satwal"
+
+    },
+    {
+        "email":"soumya@gmail.com",
+        "password":"123456",
+        "first-name":"Soumya priyadarshi",
+        "last-name":"Das"
+    }
+]

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="passbox" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sabka Bazar Shopping website " />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../sass/theme.css" />
+    <link rel="stylesheet" href="../sass/layout/login.css" />
+    <title>Login | Sabka Bazaar</title>
+  </head>
+  <body>
+    <section class="header"></section>
+    <section class="login-container">
+      <div class="complete_page">
+        <div class="left_page">
+          <h1 class="page_title">Login</h1>
+          <h3 class="page_description">
+            Get access to your Orders, Wishlist and Recomendations
+          </h3>
+        </div>
+        <div class="right_page">
+          <form class="form">
+            <div>
+              <div class="txt_field">
+                <input
+                  type="email"
+                  autocomplete
+                  id="user_mail"
+                  autofocus
+                  tabindex="1"
+                  required
+                />
+                <span></span>
+                <label class="email_box">Email</label>
+              </div>
+              <span class="email_text"></span>
+            </div>
+            <div>
+              <div class="txt_field">
+                <input
+                  type="password"
+                  id="user_password"
+                  tabindex="2"
+                  autocomplete
+                  required
+                />
+                <span></span>
+                <label class="password_box">Password</label>
+              </div>
+              <span class="password_text"></span>
+            </div>
+            <div class="show_pass">
+              <input
+                type="checkbox"
+                class="showpass_checkox"
+                id="showpassword"
+                tabindex="3"
+              />
+              <span>Show Password</span>
+            </div>
+            <input
+              type="submit"
+              id="login"
+              value="Login"
+              tabindex="4"
+              onclick="loginsuccess(event)"
+            />
+            <div class="page_redirection_link">
+              Not a member?
+              <a href="./signup.html" tabindex="5">Signup</a>
+            </div>
+            <div class="forgotpass">
+              <a href="#" tabindex="6">Forgot Password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="footer"></section>
+    <script type="module" src="../js/utility/common.js"></script>
+    <script src="../js/user/login.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/c090413f2d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
